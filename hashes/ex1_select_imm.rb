@@ -9,5 +9,6 @@ family = {  uncles: ["bob", "joe", "steve"],
             brothers: ["frank","rob","david"],
             aunts: ["mary","sally","susan"]
           }
-immediate = family.select { |title, names| title == ":sisters" || title == ":brothers" }
-puts immediate.values
+immediate = family.select { |title, v| (title == :sisters) || (title == :brothers) }
+imm_arr =  immediate.values.flatten
+p imm_arr
