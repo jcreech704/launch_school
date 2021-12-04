@@ -1,0 +1,17 @@
+=begin
+Using a while loop, print 5 random numbers between 0 and 99.
+=end
+i = 0
+while i < 5
+  p Random.new.rand(0..99)
+  i += 1
+end
+=begin
+numbers = []
+
+while numbers.size < 5
+  numbers << rand(100)
+end
+
+puts numbers
+=end
